@@ -103,7 +103,7 @@ export default class HomeView extends Vue {}
     text-align: center;
     // background-color: #41b883;
     background-color: #da6363;
-    padding: 32px 64px;
+    padding: 48px 64px;
     -webkit-box-shadow: rgba(0,0,0,0.7) 0px 0 16px;
     -moz-box-shadow: rgba(0,0,0,0.7) 0 0 16px;
     box-shadow: rgba(0,0,0,0.3) 0 0 16px;
