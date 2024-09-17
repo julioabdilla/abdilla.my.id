@@ -1,0 +1,27 @@
+$color-main: #c6c6c6;
+$color-secondary: #41b883;
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: $color-main;
+  color: #35495e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    font-weight: bold;
+    color: #35495e;
+    text-decoration: none;
+    // -webkit-transition: font-weight .5s ease-in-out;
+    // -moz-transition: font-weight .5s ease-in-out;
+    // -o-transition: font-weight .5s ease-in-out;
+    // transition: font-weight .5s ease-in-out;
+
+    &:active,
+    &.router-link-active {
+      font-weight: bold;
+      text-decoration: underline;
+      color: #35495e
+    }
+  }
+}
