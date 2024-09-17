@@ -1,3 +1,4 @@
+require('dotenv')
 const port = process.env.PORT || 8080
 
 const express = require('express') 
