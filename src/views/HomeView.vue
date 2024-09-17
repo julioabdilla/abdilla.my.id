@@ -2,11 +2,11 @@
   <div id="home">
     <div class="wrap">
       <!-- <img alt="Vue logo" src="@/assets/logo.png"> -->
-      <svg width="240px" height="240px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="180px" height="180px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="style=fill">
         <g id="profile">
-        <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6.5C6.75 3.6005 9.1005 1.25 12 1.25C14.8995 1.25 17.25 3.6005 17.25 6.5C17.25 9.3995 14.8995 11.75 12 11.75C9.1005 11.75 6.75 9.3995 6.75 6.5Z" fill="#35495e"/>
-        <path id="rec (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M4.25 18.5714C4.25 15.6325 6.63249 13.25 9.57143 13.25H14.4286C17.3675 13.25 19.75 15.6325 19.75 18.5714C19.75 20.8792 17.8792 22.75 15.5714 22.75H8.42857C6.12081 22.75 4.25 20.8792 4.25 18.5714Z" fill="#35495e"/>
+        <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6.5C6.75 3.6005 9.1005 1.25 12 1.25C14.8995 1.25 17.25 3.6005 17.25 6.5C17.25 9.3995 14.8995 11.75 12 11.75C9.1005 11.75 6.75 9.3995 6.75 6.5Z" fill="#c6c6c6"/>
+        <path id="rec (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M4.25 18.5714C4.25 15.6325 6.63249 13.25 9.57143 13.25H14.4286C17.3675 13.25 19.75 15.6325 19.75 18.5714C19.75 20.8792 17.8792 22.75 15.5714 22.75H8.42857C6.12081 22.75 4.25 20.8792 4.25 18.5714Z" fill="#c6c6c6"/>
         </g>
         </g>
       </svg>
@@ -14,7 +14,7 @@
       <div class="sub">
         <span>Software Engineer</span>
         <a href="/files/cv.pdf" title="Download CV" target="_blank" rel="noopener noreferrer">
-          <svg fill="#35495e" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          <svg fill="#c6c6c6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
             width="14px" height="14px" viewBox="0 0 598.16 598.159"
             xml:space="preserve">
             <g>
@@ -42,7 +42,7 @@
       </a>
       |
       <a href="mailto:julio.abdilla@gmail.com" target="_blank" rel="noopener noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24" fill="#35495e">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24" fill="#35495e">
           <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M7 2.75C5.38503 2.75 3.92465 3.15363 2.86466 4.1379C1.79462 5.13152 1.25 6.60705 1.25 8.5V15.5C1.25 17.393 1.79462 18.8685 2.86466 19.8621C3.92465 20.8464 5.38503 21.25 7 21.25H17C18.615 21.25 20.0754 20.8464 21.1353 19.8621C22.2054 18.8685 22.75 17.393 22.75 15.5V8.5C22.75 6.60705 22.2054 5.13152 21.1353 4.1379C20.0754 3.15363 18.615 2.75 17 2.75H7ZM19.2285 8.3623C19.5562 8.10904 19.6166 7.63802 19.3633 7.31026C19.1101 6.98249 18.6391 6.9221 18.3113 7.17537L12.7642 11.4616C12.3141 11.8095 11.6858 11.8095 11.2356 11.4616L5.6886 7.17537C5.36083 6.9221 4.88982 6.98249 4.63655 7.31026C4.38328 7.63802 4.44367 8.10904 4.77144 8.3623L10.3185 12.6486C11.3089 13.4138 12.691 13.4138 13.6814 12.6486L19.2285 8.3623Z"></path>
         </svg>
         <span>julio.abdilla@gmail.com</span>
@@ -95,6 +95,7 @@ export default class HomeView extends Vue {}
     overflow: hidden;
     width: 100%;
     height: 100%;
+    color: #c6c6c6;
   }
   .wrap {
     display: flex;
@@ -102,7 +103,7 @@ export default class HomeView extends Vue {}
     border-radius: 16px;
     text-align: center;
     // background-color: #41b883;
-    background-color: #da6363;
+    background-color: #383838;
     padding: 48px 64px;
     -webkit-box-shadow: rgba(0,0,0,0.7) 0px 0 16px;
     -moz-box-shadow: rgba(0,0,0,0.7) 0 0 16px;
@@ -130,14 +131,15 @@ export default class HomeView extends Vue {}
     justify-content: center;
     margin-top: 18px;
     a {
+      display: flex;
+      justify-content: center;
       padding: 0 6px;
-
       span {
         margin-left: 4px;
       }
-    }
-    svg {
-      vertical-align: middle;
+      svg {
+        vertical-align: middle;
+      }
     }
   }
 </style>
