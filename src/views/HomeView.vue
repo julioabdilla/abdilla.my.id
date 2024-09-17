@@ -100,6 +100,8 @@ export default class HomeView extends Vue {}
   .wrap {
     display: flex;
     flex-direction: column;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
     border-radius: 16px;
     text-align: center;
     // background-color: #41b883;
