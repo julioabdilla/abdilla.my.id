@@ -10,27 +10,30 @@
         </g>
         </g>
       </svg>
-      <span class="title">Julio Abdilla</span>
-      <div class="sub">
-        <span>Software Engineer</span>
-        <a href="/files/cv.pdf" title="Download CV" target="_blank" rel="noopener noreferrer">
-          <svg fill="#c6c6c6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            width="14px" height="14px" viewBox="0 0 598.16 598.159"
-            xml:space="preserve">
-            <g>
+      <div class="info">
+        <span class="sub2">Hello World, my name</span>
+        <span class="title">Julio Abdilla</span>
+        <div class="sub">
+          <span>a Software Engineer</span>
+          <a href="/files/cv.pdf" title="Download CV" target="_blank" rel="noopener noreferrer">
+            <svg fill="#c6c6c6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              width="14px" height="14px" viewBox="0 0 598.16 598.159"
+              xml:space="preserve">
               <g>
-                <path d="M466.361,146.097C466.361,65.539,391.32,0,299.08,0c-92.241,0-167.281,65.539-167.281,146.097v344.207
-                  c0,29.119,13.036,56.411,36.705,76.849c23.158,19.994,53.798,31.007,86.276,31.007c67.812,0,122.981-48.382,122.981-107.853
-                  V184.343c0.107-18.865-8.265-36.613-23.574-49.899c-14.36-12.463-33.933-19.327-55.11-19.327c-21.178,0-40.75,6.863-55.111,19.327
-                  c-15.309,13.287-23.684,31.065-23.574,50.062V452.06c0,17.292,15.425,31.362,34.388,31.362s34.389-14.07,34.389-31.362V184.343
-                  c-0.006-1.658,0.75-3.136,2.252-4.449c1.735-1.5,4.614-2.417,7.656-2.417c3.041,0,5.921,0.921,7.705,2.46
-                  c0.985,0.86,2.212,2.335,2.203,4.259v306.107c0,24.884-24.318,45.129-54.205,45.129c-29.887,0-54.205-20.245-54.205-45.129
-                  V146.097c0.003-45.971,44.189-83.373,98.504-83.373c54.315,0,98.501,37.402,98.501,83.373v267.716
-                  c0,17.292,15.426,31.362,34.389,31.362s34.389-14.07,34.389-31.362V146.097H466.361z"/>
+                <g>
+                  <path d="M466.361,146.097C466.361,65.539,391.32,0,299.08,0c-92.241,0-167.281,65.539-167.281,146.097v344.207
+                    c0,29.119,13.036,56.411,36.705,76.849c23.158,19.994,53.798,31.007,86.276,31.007c67.812,0,122.981-48.382,122.981-107.853
+                    V184.343c0.107-18.865-8.265-36.613-23.574-49.899c-14.36-12.463-33.933-19.327-55.11-19.327c-21.178,0-40.75,6.863-55.111,19.327
+                    c-15.309,13.287-23.684,31.065-23.574,50.062V452.06c0,17.292,15.425,31.362,34.388,31.362s34.389-14.07,34.389-31.362V184.343
+                    c-0.006-1.658,0.75-3.136,2.252-4.449c1.735-1.5,4.614-2.417,7.656-2.417c3.041,0,5.921,0.921,7.705,2.46
+                    c0.985,0.86,2.212,2.335,2.203,4.259v306.107c0,24.884-24.318,45.129-54.205,45.129c-29.887,0-54.205-20.245-54.205-45.129
+                    V146.097c0.003-45.971,44.189-83.373,98.504-83.373c54.315,0,98.501,37.402,98.501,83.373v267.716
+                    c0,17.292,15.426,31.362,34.389,31.362s34.389-14.07,34.389-31.362V146.097H466.361z"/>
+                </g>
               </g>
-            </g>
-          </svg>
-        </a>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="contact">
@@ -86,44 +89,56 @@ export default class HomeView extends Vue {}
 
 <style lang="scss">
   #home {
+    @apply mt-0 sm:mt-[148px];
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // position: absolute;
-    margin-top: 148px;
+    // margin-top: 148px;
     overflow: hidden;
     width: 100%;
     height: 100%;
     color: #c6c6c6;
   }
   .wrap {
-    display: flex;
-    flex-direction: column;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    text-align: center;
+    @apply flex flex-col justify-center;
+    @apply w-[100%] sm:w-[300px] h-[50%] sm:h-[360px];
+    @apply rounded-none sm:rounded-xl;
+    @apply pt-[25%] sm:p-0;
     // background-color: #41b883;
     background-color: #383838;
-    padding: 48px 64px;
     -webkit-box-shadow: rgba(0,0,0,0.7) 0px 0 16px;
     -moz-box-shadow: rgba(0,0,0,0.7) 0 0 16px;
     box-shadow: rgba(0,0,0,0.3) 0 0 16px;
     // box-shadow: rgba(0,116,62,0.3) 0 0 8px;
-  }
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 12px;
-  }
-  .sub {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    margin-top: 4px;
-    a {
-      padding-left: 2px;
+    svg {
+      @apply w-full items-center;
+    }
+    .info {
+      @apply flex flex-col w-full items-center;
+      @apply mt-[10px] px-[30px] pb-[30px];
+      .title {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .sub {
+        display: flex;
+        font-size: 14px;
+        margin-top: 4px;
+        align-items: center;
+        a {
+          display: flex;
+          justify-content: center;
+          padding-left: 2px;
+        }
+      }
+      .sub2 {
+        font-size: 12px;
+      }
+      span {
+        line-height: 22px;
+      }
     }
   }
   .contact {
@@ -131,11 +146,12 @@ export default class HomeView extends Vue {}
     align-items: center;
     font-size: 12px;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 14px;
     a {
       display: flex;
       justify-content: center;
       padding: 0 6px;
+      align-items: center;
       span {
         margin-left: 4px;
       }
