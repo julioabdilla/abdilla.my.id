@@ -89,7 +89,7 @@ export default class HomeView extends Vue {}
 
 <style lang="scss">
   #home {
-    @apply mt-0 sm:mt-[148px];
+    @apply mt-0 md:mt-[148px];
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,11 +103,11 @@ export default class HomeView extends Vue {}
   }
   .wrap {
     @apply flex flex-col justify-center;
-    @apply w-[100%] sm:w-[300px] h-[50%] sm:h-[360px];
-    @apply rounded-none sm:rounded-xl;
-    @apply pt-[25%] sm:p-0;
+    @apply w-[100%] md:w-[300px] h-[50%] md:h-[360px];
+    @apply rounded-none md:rounded-xl;
+    @apply pt-[25%] md:p-0;
     // background-color: #41b883;
-    background-color: #383838;
+    background-color: #35495e;
     -webkit-box-shadow: rgba(0,0,0,0.7) 0px 0 16px;
     -moz-box-shadow: rgba(0,0,0,0.7) 0 0 16px;
     box-shadow: rgba(0,0,0,0.3) 0 0 16px;
