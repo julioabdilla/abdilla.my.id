@@ -136,7 +136,7 @@ export default class HomeView extends Vue {}
     }
     .info {
       @apply flex flex-col w-full items-center;
-      @apply mt-[10px] px-[30px] pb-[30px];
+      @apply mt-[10px] px-[30px] pb-[30px] md:pb-0;
       .title {
         font-size: 26px;
         font-weight: bold;
