@@ -1,0 +1,14 @@
+services:
+  abdilla.my.id:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: abdilla.my.id
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    networks:
+      - abdilla.my.id
+networks:
+  abdilla.my.id:
+    external: true
