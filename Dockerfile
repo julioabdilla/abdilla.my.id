@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install
-COPY . .
-COPY .env .
+COPY dist/ .
+COPY server.js .
 RUN yarn build
 CMD [ "node", "server.js" ]
